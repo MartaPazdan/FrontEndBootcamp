@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<title> </title>
+
+<link rel ="stylesheet" href = "css/style.css">
+</head>
+
+<body>
+
+<h1>Zadanie 5 - 1 tydzień</h1>
+
+<div class = "container">
+<h2>Lista użytkowników</h2>
+
+<button id="getUsers" type="submit">Pobierz dane</button>
+
+<script id="userTemplate" type="text/x-template">
+<li>
+	<h2>Name: {{ name }}</h2>
+	<p>Username: {{ username }}</p>
+	<p>E-mail: {{ email }}</p>
+	<p>Phone: {{ phone }}</p>
+	<p>Company Name: {{ company.name }}</p>
+</li>
+</script>
+
+
+
+</div>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/mustache.min.js"></script>
+
+<script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>

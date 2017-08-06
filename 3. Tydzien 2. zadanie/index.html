@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<title> </title>
+
+<link rel ="stylesheet" href = "css/style.css">
+</head>
+
+<body>
+
+<h1>Zadanie 2 - 3 tydzień</h1>
+
+<h2> 2. Abstrakcyjna baza danych z użyciem localStorage</h2>
+
+
+
+<script src="js/localdb.js"></script>
+
+<script>
+
+var DB1 = new localDB("DB1");
+
+var janek = {
+	firstName: "Jan",
+	lastName: "Kowalski",
+	age: 32
+}
+
+DB1.save("janek", janek);
+var result = DB1.get("janek");
+
+console.log(result);
+
+</script>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+</body>
+
+</html>
